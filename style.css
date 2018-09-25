@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  font-family: 'Arial';
+  text-align: center;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+#container > * {
+  background:#3bbced;
+  padding: 30px;
+}
+
+header {
+  grid-column: 1/13;
+  grid-row: 1/2;
+}
+
+main {
+  grid-column: 3/10;
+  grid-row: 2/6;
+  line-height: 1.6em;
+}
+
+section {
+  position: relative;
+  grid-column: 3/10;
+  background-color: #ddd;
+  border: 1px solid red;
+  padding: 2em;
+}
+
+nav {
+  grid-column: 1/3;
+  grid-row: 2/7;
+}
+
+h1 {
+  color: #660022;
+  text-decoration: underline;
+}
+
+h2 {
+  color: #e65c00;
+  tex
+}
+
+h3 {
+  color: #ffff4d;
+}
+
+.profile {
+  position: relative;
+  grid-column: 10/13;
+  grid-row: 2/7;
+}
+
+footer {
+  grid-column: 1/13;
+}
+
+#siteinfo {
+  background: #00e699;
+  text-align: center;
+  color: red;
+}
+
+/*Sets the sizing for images making up the banner*/
+.frame {
+  width: 25%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/*formatting for navigation bar*/
+nav li {
+  padding-bottom: 50px;
+  margin-bottom: 25px;
+  float: left;
+}
+
+nav a {
+  color: #B8141F;
+}
+
+nav a:hover {
+  color: #E7F7D4;
+}
+
+nav h1 {
+text-shadow: -1px 0 #7FBD32, 0 1px #7FBD32, 1px 0 #7FBD32, 0 -1px #7FBD32;
+}
+
+/* navigation buttons */
+.button {
+  width: 80%;
+  margin: 1em;
+    background-color: #7FBD32;
+    border: 1px solid #E7F7D4;
+    border-radius: 12px;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover {
+  background-color: #34090C;
+  color: #E7F7D4;
+}
+
+/* creates a background image with an opague box containing text */
+div.background {
+  background: url(Images/Sapphire/DeerDusk.jpg) ;
+  background-size: cover;
+  border: 2px solid black;
+  margin-top: 2em;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.4;
+  padding: 2em;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #34090C;
+}
+
+.imgcontainer {
+  position: absolute;
+  top: 7%;
+  left: 1%;
+  border:4px solid #ff0;
+  background-color: #021a40;
+}
+
+
+
+/******************************************************/
+
+/*table styling for profile section*/
+table {
+  position: absolute;
+  top: 37%;
+  left: 1%;
+  line-height: auto;
+  background: black;
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 1em;
+  border: 2px dashed white;
+  border-radius: 10px;
+}
+
+th  {
+  color: #EA202C;
+  text-align: justify;
+  padding-bottom: 2em;
+  padding-right: 1em;
+}
+
+td  {
+  color: #E7F7D4;
+  text-align: justify;
+  padding-bottom: 2em;
+}
+
+
+
+/*LinkedIn logo on homepage*/
+#logo {
+  clear: both;
+  margin: 0 auto;
+  margin: 10px 40% 1px 40%;
+  width: 12em;
+  height: auto;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+#logo:hover {
+  border: 5px solid black;
+  border-radius: 12px;
+}
+
+form {
+  position: relative;
+  background: grey;
+  padding: 20px;
+  margin: 20px 30% 80px 30%;
+  border: 3px solid yellow;
+  border-radius: 20px;
+}
+
+form label {
+display: block;
+text-align: left;
+  color: blue;
+padding-left: 30%;
+padding-right: 30%;
+margin-bottom: 15px;
+}
+
+form label input, textarea {
+  float: right;
+  margin-bottom: 15px;
+}
+
+input[type=image] {
+  width: 150px;
+  height: auto;
+}
+
+textarea {
+   width: 150%;
+   height: 100px;
+}
+
+/* Change background colour of form when inside it*/
+textarea:focus {
+  background-color: #b3ffb3;
+}
+
+textarea:hover {
+  border: 2px solid #34090C;
+  border-radius: 4px;
+}
+
+input[type=image]:hover {
+border: 4px solid black;
+border-radius: 12px;
+}
+
+input:focus {
+  background-color: #b3ffb3;
+}
+
+/* Puts a bigger border around box when its hovered over*/
+input:hover {
+  border: 2px solid ;
+  border-radius: 4px;
+}
